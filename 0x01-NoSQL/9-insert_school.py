@@ -5,5 +5,5 @@ import pymongo
 
 def insert_school(mongo_collection, **kwargs):
     '''A function which insert new document'''
-    doc = mongo_collectio.insert_one(kwargs)
-    return data.id
+    doc = mongo_collection.insert_one(kwargs)
+    return doc.id
