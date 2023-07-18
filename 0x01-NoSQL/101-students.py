@@ -3,6 +3,7 @@
 
 
 def top_students(mongo_collection):
+    '''A function which print to scores'''
     students_collection = mongo_collection.aggregate(
             [
                 {
