@@ -1,0 +1,2 @@
+// delete an item from a colection
+db.school.delete({name: "Holberton school"})
