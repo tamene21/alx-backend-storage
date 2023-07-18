@@ -4,7 +4,7 @@
 
 def top_students(mongo_collection):
     '''A function which print to scores'''
-    students_collection = mongo_collection.aggregate(
+    students = mongo_collection.aggregate(
             [
                 {
                     '$project': {
@@ -23,4 +23,4 @@ def top_students(mongo_collection):
                         },
                 ]
             )
-    return students_collection
+    return students
