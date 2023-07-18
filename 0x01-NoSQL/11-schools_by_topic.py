@@ -5,4 +5,4 @@ import pymongo
 
 def schools_by_topic(mongo_collection, topic):
     '''A function which return a list of schools'''
-    return mongo_collection.find({"topic": {"$in": [topics]}})
+    return mongo_collection.find({"topics": {"$in": [topic]}})
