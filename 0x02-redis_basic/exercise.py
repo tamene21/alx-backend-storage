@@ -1,9 +1,9 @@
 #!/usr/bin/env python3
-'''Interacting with redis server using python module'''
-import redif
+"""python module to interact with redis server"""
+import redis
 import uuid
-from typing Union, Optional, Callable
-from functiontools import wraps
+from typing import Union, Optional, Callable
+from functools import wraps
 
 
 def call_history(method: Callable) -> Callable:
